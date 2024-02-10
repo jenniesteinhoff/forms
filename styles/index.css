@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    background-color: #FFF;
+}
+
+/*background_two-colored*/ 
+.background_two-colored {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    height: 594px;
+}
+.left {
+    width: 609px;
+    background-color: #BE0909;
+}
+.right {
+    width: 345px;
+    background-color: #FFB039;
+}
+
+.container.general {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFF;
+}
