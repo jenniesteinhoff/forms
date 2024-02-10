@@ -1,26 +1,53 @@
-body, html {
+/*General Position*/
+html, body {
     height: 100%;
-    background-color: #FFF;
 }
-
-/*background_two-colored*/ 
-.background_two-colored {
+body, .img, .form, .background, .container.general {
     display: flex;
     justify-content: center;
-    margin: 20px;
-    height: 594px;
+    position: relative;
 }
-.left {
+
+/*Specific Positioning*/
+.container.general {
+    align-items: center;
+    height: 900px;
+    width: 1400px;
+}
+.background {
+    justify-content: flex-start;
+    height: 594px;
+    width: 954px; 
+}
+.img, .form {
+    position: fixed;
+}
+img {
+    transform: translate(342px, 52px)
+}
+
+/*General Style*/
+body {
+    background-color: #9DBEBB;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 18px;
+    font-size: 18px;
+    text-align: left;
+    color: #FFF;
+}
+
+
+/*Specific Styling*/
+#color_left {
     width: 609px;
     background-color: #BE0909;
 }
-.right {
+#color_right {
     width: 345px;
     background-color: #FFB039;
 }
-
-.container.general {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: #FFF;
+.input-sections {
+    letter-spacing: 30px;
 }

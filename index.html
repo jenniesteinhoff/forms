@@ -12,12 +12,44 @@
 </head>
 
 <body>
-    <div class="background_two-colored">
-        <div class="left"></div>
-        <div class="right"></div>
-    </div>
+    
     <div class="container general">
+        <div class="background">
+            <div id="color_left"></div>
+            <div id="color_right"></div>
+            <div class="img"><img src="./images/duck.png" alt="yellow rubber duck"></div>
+        </div>
+
+        <!--Text-->
+        <div class="form">
+            <form>
+                <div>
+                    <label for="full_name" class="labels">FULL NAME
+                    </label>
+                    <input type="name" name="full_name" id="full_name" class="input-sections">
+                </div>
+                <div>
+                    <label for="email" class="labels">EMAIL
+                    </label>
+                    <input type="email" name="email" id="email" class="input-sections" placeholder="Your Email">
+                </div>
+                <div>
+                    <label for="regarding" class="labels">MESSAGE REGARDING
+                    </label>
+                    <input type="regarding" name="message_regarding" id="message_regarding" class="input-sections">
+                </div>
+                <div>
+                    <label for="message" class="labels">MESSAGE
+                    </label>
+                    <input type="message" name="message" id="message" class="input-sections" placeholder="Your Message">
+                </div>
+
+            <!--Button-->
+                <button type="sumbit" class="button">SEND MESSAGE</button>
+            </form>
+        </div>
     </div>
+
 </body>
 
 </html>
