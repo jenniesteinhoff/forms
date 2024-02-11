@@ -23,10 +23,11 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
     position: relative;
     height: 466px;
     width: 400px;
-    transform: translate(65px, 64px); 
+    transform: translate(65px, 60px); 
 }
 
 
@@ -50,8 +51,74 @@ html {
     background-color: transparent;
     color: #FFF;
 }
+.input-sections { 
+    height: 30px;
+    width: 400px;
+/*To-be-fixed*/    margin-top: 21px;
+    border-bottom: #9DBEBB;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    text-indent: 10px;
+    padding-bottom: 6px;
+}
+.input-sections:hover {
+    cursor:text;
+    text-shadow: 0px 0px 12px #000000d7;
+    transition: 0.5s;
+}
+input#email.input-sections, input#message_regarding.input-sections {
+    width: 160px;
+}
+::placeholder {
+    letter-spacing: 5px;
+}
+.input-sections:focus::placeholder {
+    color: transparent;
+    text-shadow: none;
+    transition: 0.3s;
+}
+.input-sections:focus:-ms-input-placeholder {
+    color: transparent;
+    text-shadow: none;
+    transition: 0.3s;
+}
+.input-sections:focus::-webkit-input-placeholder {
+    color: transparent;
+    text-shadow: none;
+    transition: 0.3s;
+}
+.input-sections, .labels {
+    font-weight: 400;
+}
+
+.labels {
+    transform: translate(-4px, 4px);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 5px;
+}
+#label_email {
+    margin-top: 18px;
+}
+#label_regarding {
+    margin-top: 27px;
+}
+#label_message {
+    margin-top: 17px;
+}
+.labels:hover {
+    background-color: #920909;
+    box-shadow: 0px 0px 6px #00000027;
+    transition: 0.5s;
+}
+.labels, .button {
+    letter-spacing: 2px;
+}
+
 .button {
-    height: 48px;
+    min-height: 48px;
     width: 202px;
     margin-top: 56px;
     transform: translateX(99px);
@@ -61,26 +128,8 @@ html {
     background-color: #468189;
     box-shadow: 0px 0px 12px #00000080;
 }
-.input-sections { 
-    height: 24px;
-/*To-be-fixed*/    margin-top: 15px;
-    border-bottom: #9DBEBB;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    text-indent: 10px;
-    padding-bottom: 6px;
+.button:hover {
+    cursor:pointer;
+    background-color: #26545a;
+    transition: 0.5s;
 }
-.labels {
-    margin-top: 21px;
-}
-.input-sections, .labels {
-    font-weight: 400;
-}
-.labels, .button {
-    letter-spacing: 2px;
-}
-::placeholder {
-    letter-spacing: 5px;
-}
-
-
