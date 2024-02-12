@@ -27,7 +27,11 @@ html {
     position: relative;
     height: 466px;
     width: 400px;
-    transform: translate(65px, 60px); 
+    transform: translate(65px, 58px); 
+}
+.select-list {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -42,36 +46,58 @@ html {
 }
 
 
-.input-sections, .button, .labels, ::placeholder {
+.input-sections, .button, .labels, ::placeholder, .select {
     font-family: 'Roboto', sans-serif;
     line-height: normal;
     text-align: left;
-    font-size: 18px;
     border-style: none;
     background-color: transparent;
     color: #FFF;
 }
-.input-sections { 
+::placeholder, .labels, .button, .select {
+    font-size: 18px;
+}
+.input-sections, .select, option { 
     height: 30px;
-    width: 400px;
 /*To-be-fixed*/    margin-top: 21px;
     border-bottom: #9DBEBB;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     text-indent: 10px;
-    padding-bottom: 6px;
+    padding-bottom: 9px;
+    
+}
+.input-sections:hover, .select-list :hover {
+    background-color: #910707;
+    text-shadow: 0px 0px 12px #000000d7;
+    box-shadow: 0px 0px 12px #00000080;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: 0.5s;
 }
 .input-sections:hover {
     cursor:text;
-    text-shadow: 0px 0px 12px #000000d7;
-    transition: 0.5s;
 }
-input#email.input-sections, input#message_regarding.input-sections {
+input#full_name.input-sections, input#message.input-sections {
+    width: 400px;
+}
+input#email.input-sections, select#message_regarding.select {
     width: 160px;
 }
 ::placeholder {
     letter-spacing: 5px;
 }
+.select-list :hover, .select-list {
+    cursor: pointer;
+}
+.select {  
+    letter-spacing: 5px;
+}
+option {
+    font-size: 14px;
+    background-color: #910707;
+}
+
 .input-sections:focus::placeholder {
     color: transparent;
     text-shadow: none;
@@ -87,10 +113,9 @@ input#email.input-sections, input#message_regarding.input-sections {
     text-shadow: none;
     transition: 0.3s;
 }
-.input-sections, .labels {
+.input-sections, .labels, option {
     font-weight: 400;
 }
-
 .labels {
     transform: translate(-4px, 4px);
     padding-top: 2px;
@@ -99,14 +124,20 @@ input#email.input-sections, input#message_regarding.input-sections {
     padding-left: 6px;
     border-radius: 5px;
 }
-#label_email {
-    margin-top: 18px;
+#label_name {
+    margin-bottom: 4px;
 }
-#label_regarding {
-    margin-top: 27px;
+#label_email {
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+#label_select {
+    margin-top: 25px;
+    margin-bottom: 1px;
 }
 #label_message {
-    margin-top: 17px;
+    margin-top: 15px;
+    margin-bottom: 4px;
 }
 .labels:hover {
     background-color: #920909;
@@ -114,6 +145,7 @@ input#email.input-sections, input#message_regarding.input-sections {
     transition: 0.5s;
 }
 .labels, .button {
+    text-transform: uppercase;
     letter-spacing: 2px;
 }
 

@@ -17,24 +17,33 @@
             <div class="card left">
                 <!--Text-->
                 <form class="form">
-                    <label for="full_name" id="label_name" class="labels">FULL NAME
+                    <label for="full_name" id="label_name" class="labels">full name
                     </label>
-                    <input type="name" name="full_name" id="full_name" class="input-sections" placeholder="">
+                    <input type="text" name="full_name" id="full_name" class="input-sections" placeholder="">
 
-                    <label for="email" id="label_email" class="labels">EMAIL
+                    <label for="email" id="label_email" class="labels">email
                     </label>
                     <input type="email" name="email" id="email" class="input-sections" placeholder="Your Email">
 
-                    <label for="message_regarding" id="label_regarding" class="labels">MESSAGE REGARDING
-                    </label>
-                    <input type="regarding" name="message_regarding" id="message_regarding" class="input-sections" placeholder="">
 
-                    <label for="message" id="label_message" class="labels">MESSAGE
+                    <div class="select-list">
+                        <label for="message_regarding" id="label_select" class="labels">message regarding</label>
+                        <i class="fas fa-caret-down select__icon"></i>
+                        <select name="message_regarding" id="message_regarding" class="select">
+                            <option value="0">Select</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                        </select>
+                    </div>
+
+                    <label for="message" id="label_message" class="labels">message
                     </label>
                     <input type="message" name="message" id="message" class="input-sections" placeholder="Your Message">
 
                 <!--Button-->
-                    <button type="sumbit" class="button">SEND MESSAGE</button>
+                    <button type="sumbit" class="button">send message</button>
                 </form>
             </div>
             <div class="img"><img src="./images/duck.png" alt="yellow rubber duck"></div>
